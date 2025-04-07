@@ -1,6 +1,9 @@
-package com.vishal2376.belleza.presentation.common
+package com.vishal2376.belleza.presentation.components
 
-import androidx.compose.foundation.layout.PaddingValues
+import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material3.ExperimentalMaterial3Api
@@ -12,7 +15,9 @@ import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
 import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import com.vishal2376.belleza.ui.theme.BellezaTheme
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -20,20 +25,21 @@ import com.vishal2376.belleza.ui.theme.BellezaTheme
 fun BellezaScreen(
 	title: String,
 	modifier: Modifier = Modifier,
-	showBack: Boolean = false,
-	onBackClick: () -> Unit = {},
+	showBack: Boolean = true,
+	onClickBack: () -> Unit = {},
+	titleColor: Color = MaterialTheme.colorScheme.onBackground,
 	actions: @Composable () -> Unit = {},
-	content: @Composable (PaddingValues) -> Unit
+	content: @Composable () -> Unit
 ) {
 	BellezaTheme {
 		Scaffold(
 			modifier = modifier,
 			topBar = {
 				TopAppBar(
-					title = { Text(title) },
+					title = { Text(text = title, color = titleColor) },
 					navigationIcon = {
 						if (showBack) {
-							IconButton(onClick = { onBackClick() }) {
+							IconButton(onClick = { onClickBack() }) {
 								Icon(
 									imageVector = Icons.AutoMirrored.Filled.ArrowBack,
 									contentDescription = "Back"
@@ -47,8 +53,17 @@ fun BellezaScreen(
 						titleContentColor = MaterialTheme.colorScheme.onBackground
 					)
 				)
-			},
-			content = content
-		)
+			}
+		) { innerPadding ->
+			Box(
+				modifier = Modifier
+					.fillMaxSize()
+					.background(MaterialTheme.colorScheme.background)
+					.padding(innerPadding),
+				contentAlignment = Alignment.Center
+			) {
+				content()
+			}
+		}
 	}
 }
