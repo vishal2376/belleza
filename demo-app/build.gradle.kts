@@ -52,6 +52,7 @@ dependencies {
 
 	// import belleza
 	implementation(project(":belleza"))
+	implementation(libs.androidx.navigation.compose)
 
 	testImplementation(libs.junit)
 	androidTestImplementation(libs.androidx.junit)
