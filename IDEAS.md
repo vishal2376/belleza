@@ -1,0 +1,23 @@
+## ✅ Animation/Effect Checklist
+
+- [x] Shake Animation  
+- [ ] Light Sweep Animation  
+- [ ] Flip Animation  
+- [ ] Disintegration Effect  
+- [ ] Glassmorphism  
+- [ ] Neumorphism  
+- [ ] Reflection Animation  
+- [ ] Magnet Pull Animation  
+- [ ] Circular Mask Reveal Animation  
+- [ ] Parallax Animation Effect  
+- [ ] Liquid Animation
+- [ ] Hover Bloom Animation
+- [ ] Glitch Animation
+- [ ] Elastic Page Transition  
+- [ ] 3D Stack Flip Animation  
+- [ ] Page Curl Animation  
+- [ ] Expandable Bubble Animation  
+- [ ] Confetti Blast Animation  
+- [ ] Swipe-to-Reveal Torn Paper Effect  
+- [ ] Focus Spotlight Animation  
+- [ ] Pixelated Dissolve Effect  
