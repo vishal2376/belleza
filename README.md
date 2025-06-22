@@ -3,7 +3,8 @@
   ## 🌸 Belleza
   **Beautiful and Customizable animation library for Jetpack Compose** 
 
-  
+  </br>
+  </br>
 
 <a href="https://twitter.com/vishal2376"><img src="https://img.shields.io/badge/twitter-%231DA1F2.svg?&style=for-the-badge&logo=twitter&logoColor=white" /></a>
 <a href="https://t.me/kotlindevscommunity/"><img src="https://img.shields.io/badge/Join Community-blue?style=for-the-badge&logo=telegram&logoColor=white" /></a>
