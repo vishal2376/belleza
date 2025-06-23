@@ -36,22 +36,21 @@ fun HomeScreen(onNavigate: (String) -> Unit) {
 				.fillMaxSize()
 				.verticalScroll(rememberScrollState()),
 			horizontalAlignment = Alignment.CenterHorizontally,
-			verticalArrangement = Arrangement.Center
+			verticalArrangement = Arrangement.spacedBy(8.dp, Alignment.CenterVertically)
 		) {
-
-		}
-		BellezaRegistry.demos.forEach { demo ->
-			Box(
-				modifier = Modifier
-					.clip(RoundedCornerShape((12.dp)))
-					.clickable { onNavigate(demo.route) }
-					.fillMaxWidth(.7f)
-					.background(MaterialTheme.colorScheme.primaryContainer)
-					.border(1.dp, MaterialTheme.colorScheme.primary, RoundedCornerShape(12.dp))
-					.padding(12.dp),
-				contentAlignment = Alignment.Center
-			) {
-				Text(demo.title, color = MaterialTheme.colorScheme.onBackground)
+			BellezaRegistry.demos.forEach { demo ->
+				Box(
+					modifier = Modifier
+						.clip(RoundedCornerShape((12.dp)))
+						.clickable { onNavigate(demo.route) }
+						.fillMaxWidth(.7f)
+						.background(MaterialTheme.colorScheme.primaryContainer)
+						.border(1.dp, MaterialTheme.colorScheme.primary, RoundedCornerShape(12.dp))
+						.padding(12.dp),
+					contentAlignment = Alignment.Center
+				) {
+					Text(demo.title, color = MaterialTheme.colorScheme.onBackground)
+				}
 			}
 		}
 	}
