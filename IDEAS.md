@@ -1,8 +1,8 @@
 ## ✅ Animation/Effect Checklist
 
 - [x] Shake Animation  
-- [ ] Light Sweep Animation  
-- [ ] Flip Animation  
+- [x] Light Sweep Animation  
+- [x] Flip Animation  
 - [ ] Disintegration Effect  
 - [ ] Glassmorphism  
 - [ ] Neumorphism  
