@@ -1,12 +1,14 @@
 package com.vishal2376.belleza.presentation.demo.reflection
 
 import androidx.compose.foundation.background
+import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
@@ -27,56 +29,39 @@ fun ReflectionCardDemoScreen() {
 
 	Row(
 		modifier = Modifier
-			.fillMaxSize(),
+			.fillMaxSize()
+			.horizontalScroll(rememberScrollState()),
 		verticalAlignment = Alignment.CenterVertically,
-		horizontalArrangement = Arrangement.SpaceEvenly
+		horizontalArrangement = Arrangement.spacedBy(8.dp)
 	) {
-		ReflectionCard {
-			Box(
-				modifier = Modifier
-					.size(150.dp)
-					.clip(RoundedCornerShape(20.dp))
-					.background(
-						brush = Brush.linearGradient(
-							colors = listOf(lavender, Color(0xFFDE5D83)),
-							start = Offset(0f, 0f),
-							end = Offset(400f, 400f)
-						)
-					),
-				contentAlignment = Alignment.Center
-			) {
-				Text(
-					text = "Reflection!",
-					style = MaterialTheme.typography.titleMedium.copy(
-						color = Color.White,
-						fontWeight = FontWeight.Bold
-					),
-					modifier = Modifier.padding(20.dp)
-				)
-			}
-		}
-		ReflectionCard() {
-			Box(
-				modifier = Modifier
-					.size(150.dp)
-					.clip(RoundedCornerShape(20.dp))
-					.background(
-						brush = Brush.linearGradient(
-							colors = listOf(Color(0xFF00C9FF), Color(0xFF92FE9D)),
-							start = Offset(0f, 0f),
-							end = Offset(400f, 400f)
-						)
-					),
-				contentAlignment = Alignment.Center
-			) {
-				Text(
-					text = "Reflection!",
-					style = MaterialTheme.typography.titleMedium.copy(
-						color = Color.Black,
-						fontWeight = FontWeight.Bold
-					),
-					modifier = Modifier.padding(20.dp)
-				)
+		repeat(6) { index ->
+			ReflectionCard() {
+				Box(
+					modifier = Modifier
+						.size(150.dp)
+						.clip(RoundedCornerShape(20.dp))
+						.background(
+							brush = Brush.linearGradient(
+								colors = if (index % 2 == 0) {
+									listOf(lavender, Color(0xFFDE5D83))
+								} else {
+									listOf(Color(0xFF00C9FF), Color(0xFF92FE9D))
+								},
+								start = Offset(0f, 0f),
+								end = Offset(400f, 400f)
+							)
+						),
+					contentAlignment = Alignment.Center
+				) {
+					Text(
+						text = "Reflection!",
+						style = MaterialTheme.typography.titleMedium.copy(
+							color = Color.Black,
+							fontWeight = FontWeight.Bold
+						),
+						modifier = Modifier.padding(20.dp)
+					)
+				}
 			}
 		}
 	}
