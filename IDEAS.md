@@ -4,9 +4,9 @@
 - [x] Light Sweep Animation  
 - [x] Flip Animation  
 - [x] Reflection Effect
+- [x] Neumorphism Effect
 - [ ] Disintegration Effect  
 - [ ] Glassmorphism Effect 
-- [ ] Neumorphism Effect
 - [ ] Magnet Pull Animation  
 - [ ] Circular Mask Reveal Animation  
 - [ ] Parallax Animation Effect  
