@@ -28,8 +28,8 @@ fun NeumorphismDemoScreen() {
 	val state1 = rememberNeumorphismState()
 	val state2 = rememberNeumorphismState()
 
-	val lightBgColor = white
-	val darkBgColor = black
+	val lightBgColor = Color(0xFFE3E3E3)
+	val darkBgColor = Color(0xFF2A2A2A)
 
 	Column(
 		modifier = Modifier.fillMaxSize(),
