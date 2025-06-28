@@ -1,10 +1,11 @@
 <div align="center">
 
   ## 🌸 Belleza
-  **Beautiful and Customizable animation library for Jetpack Compose** 
-
-  </br>
-  </br>
+  **Beautiful and Customizable animations and effects library for Jetpack Compose** 
+  
+<div style="display: flex; flex-direction: row;">
+    <a href='https://github.com/vishal2376/belleza/releases/latest'><img alt='Get it on Github' src='https://github.com/vishal2376/snaptick/assets/38159691/f502e2ec-dbf4-4ed6-b23f-a47b74080fea' style="width:200px"></a>
+</div>
 
 <a href="https://twitter.com/vishal2376"><img src="https://img.shields.io/badge/twitter-%231DA1F2.svg?&style=for-the-badge&logo=twitter&logoColor=white" /></a>
 <a href="https://t.me/kotlindevscommunity/"><img src="https://img.shields.io/badge/Join Community-blue?style=for-the-badge&logo=telegram&logoColor=white" /></a>
@@ -12,6 +13,11 @@
 <img src="https://img.shields.io/github/stars/vishal2376/belleza?style=for-the-badge&logo=powerpages&color=cba6f7&logoColor=D9E0EE&labelColor=302D41"/>
 <img src="https://img.shields.io/github/last-commit/vishal2376/belleza?style=for-the-badge&logo=github&color=a6da95&logoColor=D9E0EE&labelColor=302D41"/>
 <img src="https://img.shields.io/github/repo-size/vishal2376/belleza?style=for-the-badge&logo=dropbox&color=7dc4e4&logoColor=D9E0EE&labelColor=302D41"/>
+
+
+<br/>
+<br/>
+
 
 </div>
 
