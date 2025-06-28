@@ -3,10 +3,10 @@
 - [x] Shake Animation  
 - [x] Light Sweep Animation  
 - [x] Flip Animation  
+- [x] Reflection Effect
 - [ ] Disintegration Effect  
-- [ ] Glassmorphism  
-- [ ] Neumorphism  
-- [ ] Reflection Animation  
+- [ ] Glassmorphism Effect 
+- [ ] Neumorphism Effect
 - [ ] Magnet Pull Animation  
 - [ ] Circular Mask Reveal Animation  
 - [ ] Parallax Animation Effect  
