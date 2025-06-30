@@ -5,7 +5,7 @@
 - [x] Flip Animation  
 - [x] Reflection Effect
 - [x] Neumorphism Effect
-- [ ] Disintegration Effect  
+- [x] Disintegration Effect  
 - [ ] Glassmorphism Effect 
 - [ ] Magnet Pull Animation  
 - [ ] Circular Mask Reveal Animation  
