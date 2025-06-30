@@ -1,5 +1,6 @@
 package com.vishal2376.belleza.presentation.app
 
+import com.vishal2376.belleza.presentation.demo.disintegration.DisintegrationCardDemo
 import com.vishal2376.belleza.presentation.demo.flip.FlipCardDemo
 import com.vishal2376.belleza.presentation.demo.lightsweep.LightSweepDemo
 import com.vishal2376.belleza.presentation.demo.neumorphism.NeumorphismDemo
@@ -12,6 +13,7 @@ object BellezaRegistry {
 		LightSweepDemo,
 		FlipCardDemo,
 		ReflectionCardDemo,
-		NeumorphismDemo
+		NeumorphismDemo,
+		DisintegrationCardDemo
 	)
 }
