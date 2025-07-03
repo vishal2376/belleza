@@ -4,7 +4,7 @@ import androidx.compose.ui.graphics.Color
 
 
 object LightSweepDefaults {
-	val Duration = LightSweepDuration.NORMAL
-	val Color = Color(0xFFFFFFFF)
-	val Width = 400
+	val duration = LightSweepDuration.NORMAL
+	val color = Color(0xFFFFFFFF)
+	val width = 400
 }

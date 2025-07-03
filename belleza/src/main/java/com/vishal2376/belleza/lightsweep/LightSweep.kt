@@ -1,10 +1,5 @@
 package com.vishal2376.belleza.lightsweep
 
-import androidx.compose.animation.core.EaseInOut
-import androidx.compose.animation.core.EaseInOutCubic
-import androidx.compose.animation.core.FastOutSlowInEasing
-import androidx.compose.animation.core.LinearEasing
-import androidx.compose.animation.core.LinearOutSlowInEasing
 import androidx.compose.animation.core.animateFloatAsState
 import androidx.compose.animation.core.tween
 import androidx.compose.foundation.indication
@@ -23,9 +18,9 @@ import androidx.compose.ui.graphics.Color
 @Composable
 fun LightSweep(
 	state: LightSweepState,
-	width: Int = LightSweepDefaults.Width,
-	color: Color = LightSweepDefaults.Color,
-	duration: LightSweepDuration = LightSweepDefaults.Duration,
+	width: Int = LightSweepDefaults.width,
+	color: Color = LightSweepDefaults.color,
+	duration: LightSweepDuration = LightSweepDefaults.duration,
 	modifier: Modifier = Modifier,
 	content: @Composable () -> Unit
 ) {
