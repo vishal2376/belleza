@@ -17,6 +17,29 @@ import androidx.compose.ui.unit.IntSize
 import kotlinx.coroutines.delay
 import kotlin.random.Random
 
+
+/**
+ * A composable that displays content which can disintegrate into animated particles when triggered.
+ *
+ * This is ideal for creating visual effects such as disintegration or vanish animations.
+ * The animation breaks the composable area into particles, randomly offsets them,
+ * fades them out, and then removes the effect automatically after a delay.
+ *
+ * Usage:
+ * - Set `state.isDisintegrated = true` to trigger the disintegration.
+ * - The content will disappear and particles will animate.
+ * - After the animation completes, `state.reset()` is automatically called.
+ *
+ * @param modifier The [Modifier] to be applied to the card container.
+ * @param state The state that controls whether the disintegration should happen. Use [rememberDisintegrationCardState].
+ * @param particleSize The size of each disintegration particle. Affects grid density.
+ * @param particleColor The color of the disintegration particles.
+ * @param minFadeDuration The minimum duration (in ms) for a particle to fade out.
+ * @param maxFadeDuration The maximum duration (in ms) for a particle to fade out.
+ * @param maxDelayMillis The maximum random delay (in ms) before a particle starts its animation.
+ * @param maxDisplacement The maximum offset (in pixels) a particle can move from its origin.
+ * @param content The composable content to display inside the card. This will disappear on disintegration.
+ */
 @Composable
 fun DisintegrationCard(
 	modifier: Modifier = Modifier,
