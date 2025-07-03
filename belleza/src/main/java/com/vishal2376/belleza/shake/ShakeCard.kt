@@ -15,6 +15,31 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import kotlinx.coroutines.launch
 
+/**
+ * A composable that applies a shake animation to its content, simulating a vibrating or jittering effect.
+ *
+ * Useful for drawing attention to UI components (e.g., invalid fields, alerts) by giving them a repeated
+ * horizontal or vertical shaking motion.
+ *
+ * The shake effect is driven by the [ShakeCardState], which can be toggled externally.
+ * You can control the intensity and speed of the shake using [ShakeIntensity] and [ShakeSpeed].
+ *
+ * ### Usage Example:
+ * ```
+ * val shakeState = rememberShakeCardState(shake = true)
+ *
+ * ShakeCard(state = shakeState) {
+ *     Text("Invalid input")
+ * }
+ * ```
+ *
+ * @param state The [ShakeCardState] that controls when the shake starts and in what direction.
+ *              Use [rememberShakeCardState] to create and remember this state.
+ * @param intensity The [ShakeIntensity] of the shake, controlling how far the content moves.
+ * @param speed The [ShakeSpeed] that defines how fast the shake animation plays.
+ * @param modifier Optional [Modifier] applied to the root container.
+ * @param content The content inside the shake card, which will be affected by the shake animation.
+ */
 @Composable
 fun ShakeCard(
 	state: ShakeCardState,
