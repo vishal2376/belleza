@@ -15,6 +15,33 @@ import androidx.compose.ui.graphics.BlendMode
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 
+/**
+ * A composable that applies a light sweep animation effect over its content.
+ *
+ * This effect mimics a glint or light reflection moving across the surface,
+ * commonly used for highlighting UI components like cards, buttons, or list items.
+ *
+ * The sweep is controlled via [LightSweepState], allowing the animation to be triggered externally.
+ *
+ * ### Usage Example:
+ * ```
+ * val state = rememberLightSweepState()
+ *
+ * LightSweep(state = state) {
+ *     // Your UI content here
+ * }
+ *
+ * // To trigger the animation
+ * state.lightSweep = true
+ * ```
+ *
+ * @param state The [LightSweepState] that controls when the sweep effect is triggered.
+ * @param width The width (in pixels) of the sweeping light band. Controls the visual thickness of the sweep.
+ * @param color The color of the sweep effect. Typically a semi-transparent or bright color like white.
+ * @param duration The duration of the sweep animation. Defaults to [LightSweepDefaults.duration].
+ * @param modifier The [Modifier] to be applied to the container of the sweep and content.
+ * @param content The composable content over which the light sweep effect will be applied.
+ */
 @Composable
 fun LightSweep(
 	state: LightSweepState,
