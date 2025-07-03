@@ -15,6 +15,34 @@ import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.zIndex
 
+/**
+ * A composable that creates a flip animation between two sides — front and back.
+ *
+ * The card flips based on the state provided via [FlipCardState]. You can configure
+ * the direction (horizontal or vertical), speed, and camera distance.
+ *
+ * Internally, it uses animated transitions with keyframes to simulate a smooth flip,
+ * while managing rotation, opacity, and z-index for front and back content.
+ *
+ * Usage:
+ * ```
+ * val flipState = rememberFlipCardState()
+ * FlipCard(
+ *     state = flipState,
+ *     frontSideContent = { FrontCard() },
+ *     backSideContent = { BackCard() }
+ * )
+ * ```
+ *
+ * You can call `flipState.flip()` or `flipState.flipTo(FlipSide.FRONT/BACK)` to trigger the animation.
+ *
+ * @param state The current flip state that holds the visible side and direction. Use [rememberFlipCardState] to create.
+ * @param speed The duration and timing configuration for the flip animation. Defaults to [FlipDefaults.speed].
+ * @param cameraDirection The perspective depth used for 3D effect. Defaults to [FlipDefaults.cameraDistance].
+ * @param frontSideContent The Composable that will be shown as the front side of the card.
+ * @param backSideContent The Composable that will be shown as the back side of the card.
+ * @param modifier The modifier to apply to the root container. Useful for sizing and layout behavior.
+ */
 @Composable
 fun FlipCard(
 	state: FlipCardState,
