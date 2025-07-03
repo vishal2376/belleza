@@ -17,6 +17,30 @@ import androidx.compose.ui.graphics.Shape
 import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.unit.Dp
 
+/**
+ * A composable that renders content with a soft reflection beneath it.
+ *
+ * This effect mimics a mirror-like surface or a soft glow by rendering a
+ * vertically flipped version of the content, typically with reduced alpha,
+ * offset, and scale.
+ *
+ * Ideal for modern UI designs that want to add subtle visual polish
+ * without being too flashy.
+ *
+ * ### Usage Example:
+ * ```
+ * ReflectionCard {
+ *     Image(painter = painterResource(id = R.drawable.logo), contentDescription = null)
+ * }
+ * ```
+ *
+ * @param shape The [Shape] to clip both the original and reflected content. Defaults to [ReflectionDefaults.shape].
+ * @param offset The vertical [Dp] offset to apply between the main content and its reflection. Defaults to [ReflectionDefaults.offset].
+ * @param alpha The alpha (transparency) value of the reflection. Ranges from 0f (invisible) to 1f (fully opaque). Defaults to [ReflectionDefaults.alpha].
+ * @param scale The scale applied to the reflection's size relative to the original content. Defaults to [ReflectionDefaults.scale].
+ * @param modifier The [Modifier] to apply to the container wrapping both content and its reflection.
+ * @param content The composable content that will be reflected. Typically an image, card, or text.
+ */
 @Composable
 fun ReflectionCard(
 	shape: Shape = ReflectionDefaults.shape,
