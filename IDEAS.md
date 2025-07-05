@@ -6,13 +6,13 @@
 - [x] Reflection Effect
 - [x] Neumorphism Effect
 - [x] Disintegration Effect  
+- [x] Glitch Animation
 - [ ] Glassmorphism Effect 
 - [ ] Magnet Pull Animation  
 - [ ] Circular Mask Reveal Animation  
 - [ ] Parallax Animation Effect  
 - [ ] Liquid Animation
 - [ ] Hover Bloom Animation
-- [ ] Glitch Animation
 - [ ] Elastic Page Transition  
 - [ ] 3D Stack Flip Animation  
 - [ ] Page Curl Animation  
